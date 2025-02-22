@@ -1,0 +1,187 @@
+.App {
+  text-align: center;
+  position: relative;
+  height: 100vh;
+  background: linear-gradient(rgba(255, 255, 255, 0.726), rgb(209, 194, 166), rgb(218, 197, 157), rgba(255, 255, 255, 0.5))
+}
+
+.App p {
+  /* display: flex;
+  align-items: center;
+  justify-content: center; */
+  position: relative;
+  top: 150px;
+  font-size: 30px;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.fh {
+  background-color: rgb(223, 147, 34);
+  color: white;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+
+
+}
+
+.fh2 {
+  background-color: rgb(223, 110, 34);
+  color: white;
+  position: fixed;
+  width: 100%;
+  height: 10%;
+  top: 88vh;
+
+}
+
+.todoInput input {
+  width: 16rem;
+  height: 2.5rem;
+  display: inline;
+  margin: 0px;
+  margin-top: 90px;
+  margin-right: 5px;
+  border-radius: 5px;
+  border: none;
+  font-size: 20px;
+  padding-left: 3px;
+  background-color: transparent;
+  filter: blur(50%);
+  padding-left: 7px;
+  box-shadow: 1px 1px 4px black;
+}
+
+.todoInput input::placeholder {
+  font-size: 18px;
+  padding-left: 2px;
+  color: gray;
+}
+
+.todoInput button {
+  width: 3rem;
+  height: 2.6rem;
+  margin-top: 17px;
+  text-align: center;
+  display: inline;
+  margin: 0;
+  margin-top: 13px;
+  border-radius: 3px;
+  border: none;
+  background-color: rgb(150, 72, 27);
+  cursor: pointer;
+  transition: .5s ease all;
+}
+
+.todoInput button:hover {
+  transform: translateY(-2px);
+  background-color: orangered;
+  color: aliceblue;
+}
+
+.todoInput button:hover:active {
+  background-color: rgb(31, 29, 29);
+}
+
+.todoInput svg {
+
+  font-size: 20px;
+  margin-bottom: -5px;
+  text-align: center;
+  cursor: pointer;
+
+}
+
+.todoSearch {
+  position: relative;
+  top: 3px;
+  left: 38%;
+  height: 40px;
+  width: 265px;
+  border-radius: 10px;
+  margin-top: 2px;
+  margin-bottom: 30px;
+}
+
+.todoSearch input {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 19rem;
+  height: 2.5rem;
+  border: none;
+  font-size: 20px;
+  padding-left: 3px;
+  background-color: transparent;
+  filter: blur(50%);
+  padding-left: 7px;
+  box-shadow: 1px 1px 4px black;
+  transition: 0.5s ease all;
+}
+
+.todoSearch svg {
+  position: absolute;
+  right: -30px;
+  top: 11px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.todoSearch input:focus {
+  background-color: rgb(203, 187, 187, 0.5);
+
+}
+
+.items input[type='checkbox'] {
+  height: 40px;
+  width: 40px;
+  border-radius: 30px;
+  margin: 10px;
+  accent-color: rgb(166, 255, 0);
+  color: rgb(255, 255, 255);
+}
+
+
+.items {
+  text-decoration: none;
+  background-color: rgb(252, 127, 11);
+  color: white;
+  margin-top: 4px;
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  width: 30%;
+  margin-left: 33%;
+  flex-direction: row;
+  border-radius: 10px;
+  box-shadow: 0px 0px 3px black;
+  text-transform: capitalize;
+}
+
+.items svg {
+  width: 40px;
+  height: 40px;
+  margin-top: 4px;
+  border: none;
+  cursor: pointer;
+  color: rgba(18, 18, 19, 0.678);
+  margin: 10px;
+  align-items: center;
+}
+
+
+.items svg:focus,
+.items svg:hover {
+  color: red;
+  outline: none;
+}
+
+.items>label {
+  text-align: center;
+  padding: 10px;
+  font-size: 20px;
+}
